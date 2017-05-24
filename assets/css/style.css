@@ -1,0 +1,8 @@
+li.search .search-wrapper {
+    margin: 0 12px;
+    transition: margin .25s ease;
+}
+
+.side-nav.fixed {
+	background-color:#AAAAAA;
+}
