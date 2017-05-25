@@ -1,14 +1,14 @@
 //===========================================
 //		HTML To-Do Items
 //===========================================
-//	1) Create PushPin in Main area
+//	1) Create PushPin in Main area  DONE
 //	2) Create info slide
 //	3) Decide what informtaion to give back and based on what
 //	
 //===========================================
 //		CSS To-Do Items
 //===========================================
-// 	1) Make states in a scroll like Representatives are on WhosMyRep
+// 	1) Make states in a scroll like Representatives are on WhosMyRep DONE
 //	2) Figure out a font family/color Schema 
 //	3) Create logo
 

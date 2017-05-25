@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class = "container main">
-		<div id= "navHeight" class="row">
+		<div class="row">
 			<div class="col s2 m2 l2">
 				<ul id = "slide-out" class = "side-nav fixed">
 					<!--<li><img src="assets/images/logo.png"></li>-->
@@ -29,35 +29,34 @@
 			    </ul>
 			</div>
     
-    		<div class="col s10 m9 l9" id="appendInfoPushPinHere">
-		    	<!--How to Use Card-->
-		        <div id="introduction" class="section scrollspy">
-					<p class="caption">Welcome to WhosMyrep!  Use this website to help find out whats going on in your local politics!</p>
-					<h2 class="header">Instructions</h2>
-					<p class="caption">To start, click on a state or search for a state.  You can also search by zipcode to get more specific information to your area</p>
-		      	</div>
-		      	<!--Figure out how to organize information to put here-->
-		      	<div id="stateInformation" class="section scrollspy">
-		        	<p>Content </p>
-		      	</div>
-		      	<div id="aboutUs" class="section scrollspy">
-		        	<p></p>
-		      	</div>
+    		<div class="col s10 m10 l10" id="mainCol">
+			
+				<section id="intro"></section>
+				
+					<nav id="content">
+					  <div class="nav-wrapper">
+					    <ul id="nav-mobile">
+					      <li><a href="#introduction">Introduction</a></li>
+					      <li><a href="#badges">Components</a></li>
+					      <li><a href="#aboutUs">About Us</a></li>
+					    </ul>
+					  </div>
+					</nav>
+				
+				<section id="introduction" class="scrollspy mediumSize panelContent">
+					<h2 class="headerText">Welcome to Who's My Rep</h2>
+				</section>
+				<section id="badges" class="scrollspy mediumSize"></section>
+				<section id="aboutUs" class="scrollspy mediumSize"></section>
+
     		</div>
 
-    		<div class="col hide-on-small-only m1 l1">
-		    	<ul class="section table-of-contents fixed">
-		    	  <li><a href="#introduction">Introduction</a></li>
-		    	  <!--Populate links here to sections-->
-		    	  <li id="stateInformation_link"><a href="#stateInformation">State Information</a></li>
-		    	  <li><a href="#aboutUs">About Us</a></li>
-		    	</ul>
-    		</div>
 		</div>
 	</div>
 	<!--Javascript Files-->
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="assets/javascript/proPublica.js"></script>
 	<script src="assets/javascript/engine.js"></script>
 </body>
 </html>

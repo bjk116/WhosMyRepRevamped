@@ -22,7 +22,9 @@ function listLinks(linkList, targetID, tag) {
 		var toAppend = $(tag);
 		//for onClick later CSS purporses, adding nav-link class
 		toAppend.addClass('nav-link');
-		toAppend.append('<a href="#" class="waves-effect waves-light btn stateBtn">' + toTitleCase(linkList[i]) + '</a>');
+		toAppend.addClass('stateBtn');
+		var titledState = toTitleCase(linkList[i]);
+		toAppend.append('<a href="#" class="waves-effect waves-light btn stateBtn_css" data-state="' + linkList[i] + '">' + titledState + '</a>');
 		console.log('About to append ' + toAppend);
 		$(outerTag).append(toAppend);
 	}
@@ -36,8 +38,24 @@ $(document).ready( function () {
 	
 	//Initialize necessary Materialize jQuery commands
 	$('.scrollspy').scrollSpy();
+    $('#content').pushpin({
+      top: $('#content').offset().top 
+    });
+    $('.scrollspy').scrollSpy({
+      scrollOffset: 0
+    });
 
-
+	/*
+		C L I C K    L I S T E N E R   E V E N T S
+	*/
+	// When a state is clicked...
+	$('#stateListDOM').on('click', '.stateBtn', function(event) {
+		var stateClicked = event.target.attributes[2].nodeValue;
+		/* Change in DOM will be based on what information is available, so need to do API call
+		and then change DOM according to response */
+		getProPublicaStateInfo(stateClicked);
+	});
+	// When a Federal Senator/Representative is clicked
 
 	}
 );
