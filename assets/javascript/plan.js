@@ -21,6 +21,7 @@
 //	3) Function for on click of state
 //	4) Function for search of state
 //	5) Function for zipcode search
+//	6) Poll feature for those logged in?
 
 //===========================================
 //		General Flow of Javascript Functions
