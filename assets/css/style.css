@@ -5,18 +5,34 @@ li.search .search-wrapper {
 
 .side-nav.fixed {
 	background-color:#AAAAAA;
+	height
+}
+
+#slide-out {
+	height:635px;
+	overflow:visible;
 }
 
 .nav-link {
-	width:285px;
+	width:265px;
 	height:30px;
 }
 
 .stateBtn {
 	background-color: #444444;
 }
-
-#nav-mobile {
+#stateListDOM {
 	overflow: auto;
 	height:500px;
+	margin-top: 10px;
+}
+
+#introduction {
+	height:700px;
+	background:#AA00CC;
+}
+
+#stateInformation {
+	height:700px;
+	background:#777999;
 }

@@ -10,46 +10,50 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-	<ul id = "slide-out" class = "side-nav fixed">
-		<!--<li><img src="assets/images/logo.png"></li>-->
-		<li><h2>L O G O</h2></li>
-		<li class = "search">
-			<!--Search Bar-->
-			<div class = "search-wrapper card">
-				<input id = "search">
-				<i class = "material-icons">search</i>
-				<div class = "search-results"></div>
-			</div>
-		</li>
-		<div id = "stateListDOM">
-    	</div>
-    </ul>
-    
     <div class = "container main">
-	<div class="row">
-    <div class="col offset-s2 offset-m2 offset-l2 s10 m10 l10">
-    	<!--How to Use Card-->
-        <div id="introduction" class="section scrollspy">
-			<p class="caption">Welcome to WhosMyrep!  Use this website to help find out whats going on in your local politics!</p>
-			<h2 class="header">Instructions</h2>
-			<p class="caption">To start, click on a state or search for a state.  You can also search by zipcode to get more specific information to your area</p>
-      	</div>
-      	<!--Figure out how to organize information to put here-->
-      	<div id="structure" class="section scrollspy">
-        	<p>Content </p>
-      	</div>
-      	<div id="initialization" class="section scrollspy">
-        	<p>Content </p>
-      	</div>
-    </div>
-    <div class="col hide-on-small-only m3 l2">
-      <ul class="section table-of-contents">
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#structure">Structure</a></li>
-        <li><a href="#initialization">Intialization</a></li>
-      </ul>
-    </div>
-  </div>
+		<div id= "navHeight" class="row">
+			<div class="col s2 m2 l2">
+				<ul id = "slide-out" class = "side-nav fixed">
+					<!--<li><img src="assets/images/logo.png"></li>-->
+					<li><h2>L O G O</h2></li>
+					<li class = "search">
+						<!--Search Bar-->
+						<div class = "search-wrapper card">
+							<input id = "search">
+							<i class = "material-icons">search</i>
+							<div class = "search-results"></div>
+						</div>
+					</li>
+					<div id = "stateListDOM">
+			    	</div>
+			    </ul>
+			</div>
+    
+    		<div class="col s10 m9 l9" id="appendInfoPushPinHere">
+		    	<!--How to Use Card-->
+		        <div id="introduction" class="section scrollspy">
+					<p class="caption">Welcome to WhosMyrep!  Use this website to help find out whats going on in your local politics!</p>
+					<h2 class="header">Instructions</h2>
+					<p class="caption">To start, click on a state or search for a state.  You can also search by zipcode to get more specific information to your area</p>
+		      	</div>
+		      	<!--Figure out how to organize information to put here-->
+		      	<div id="stateInformation" class="section scrollspy">
+		        	<p>Content </p>
+		      	</div>
+		      	<div id="aboutUs" class="section scrollspy">
+		        	<p></p>
+		      	</div>
+    		</div>
+
+    		<div class="col hide-on-small-only m1 l1">
+		    	<ul class="section table-of-contents fixed">
+		    	  <li><a href="#introduction">Introduction</a></li>
+		    	  <!--Populate links here to sections-->
+		    	  <li id="stateInformation_link"><a href="#stateInformation">State Information</a></li>
+		    	  <li><a href="#aboutUs">About Us</a></li>
+		    	</ul>
+    		</div>
+		</div>
 	</div>
 	<!--Javascript Files-->
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
