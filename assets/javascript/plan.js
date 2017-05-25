@@ -33,9 +33,12 @@
 	//loadStateData(state);
 		//these functions should possibly all inside the .done of the 1 propbulica API
 			//populateBillsDiv(state); show what bills are coming up on state level from proPublica
-			//popualteFederalSenators(state);
-
-
+			//populateFederalSenators(state);
+			//popuateFederalRepresentatives(state);
 
 	//or loadZipcodeData(zipCode);
-		//populateBillsDiv();
+		//All inside propublicaAPI done response
+			//populateBillsDivLocal();
+			//populateFederalSenators(stateOf(zipCode));
+			//populateFederalRepresentatives(stateOf(zipCode));
+		

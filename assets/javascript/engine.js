@@ -36,7 +36,8 @@ $(document).ready( function () {
 	//Populate DOM with reptitive items
 	listLinks(states, 'stateListDOM', '<li>');
 	
-	//Initialize necessary Materialize jQuery commands
+	//**Initialize necessary Materialize jQuery commands**
+	//This one is for the PushPin/Scrollspy
 	$('.scrollspy').scrollSpy();
     $('#content').pushpin({
       top: $('#content').offset().top 
@@ -55,7 +56,10 @@ $(document).ready( function () {
 		and then change DOM according to response */
 		getProPublicaStateInfo(stateClicked);
 	});
+	
 	// When a Federal Senator/Representative is clicked
+
+	// When a State Senator/Representative is clicked
 
 	}
 );
