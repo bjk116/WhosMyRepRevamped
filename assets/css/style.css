@@ -59,10 +59,6 @@ a.active {
   margin-top:65px;
 }
 
-#badges {
-  background-color: yellow;
-}
-
 #aboutUs {
   background-color: green;
 }
@@ -81,6 +77,11 @@ a.active {
 
 .panelContent {
 	padding:20px 20px 20px 20px;
+}
+
+.caption{
+	margin-right:40%;
+	
 }
 
 .headerText {
