@@ -1,41 +1,22 @@
-var proPublicaAPIKey = 'z3XnEucyPP4p9E6L3LSPe5Y9j4NFzrdH4Tq7NuKP';
+var apiKeys = require('./apiKeys.js');
+var Congress = require( 'propublica-congress-node' );
+var client = new Congress(apiKeys.proPublica);
 
-function populateStateRepresentatives ( info ) {
+//Not sure how to exactly set this up for use from other JS
+//I guess we can think of this as an ORM, a abstract layer on top of ProPublica NPM
 
-}
+//house either = house or senate
 
-function populateStateSenators ( info ) {
+var proPublica = {
+    getMembersByState: function(stateInitials, house, cb) {
+        client.membersCurrentByStateOrDistrict({
+            chamber: house,
+            state: stateInitials
+        }).then(function(res) {
+            cb(res);
+        })
 
-}
+    }
+};
 
-function populateFederalRepresentatives ( info ) {
-
-}
-
-function populateFederalSenators ( info ) {
-
-}
-
-function getProPublicaStateInfo ( state ) {
-	console.log('Running ProPublica on: ' + state);
-	//create baseQuery URL and make request
-
-	var queryURL = 'https://api.propublica.org/congress/v1/members/senate/'+ fromStateToInitial(state) + '/current.json';
-
-	$.ajax({
-         url: queryURL,
-         method: "GET",
-         dataType: 'json',
-         headers: {'X-API-Key': proPublicaAPIKey}
-    }).done(function(data) {
-   		//inside .done()
-   		console.log(data);
-		//Make Panel on Senators
-    	// populateFederalSenators(data);
-    	//for each senator, request for their bills
-    });
-		//populate the DOM with information, state Name in Nav
-		//Make Panel on upcoming bills
-		//Make Panel on Representatives
-
-}
+module.exports = proPublica;
