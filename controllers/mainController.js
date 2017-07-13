@@ -1,7 +1,7 @@
 //Dependencies
 var express = require('express');
 var helper = require('../javascript/helper.js');
-var proPublica = require('../javascript/proPublica.js');
+var proPublica = require('../models/proPublica.js');
 
 //Router
 var router = express.Router();
@@ -23,9 +23,12 @@ router.get('/state/:stateName?', function(req, res) {
 		res.render('error');
 	} else {
 		//Some alert to let user know input is not valid, or maybe redirect to an error page?
-		proPublica.getMembersByState(stateInitials, 'senate', function(res) {
-			console.log(res);
-		})
+		proPublica.getAllMembersByState(stateInitials, function(senateResults, houseResults) {
+			console.log('SENATE');
+			console.log(senateResults);
+			console.log('HOUSE');
+			console.log(houseResults);
+		});
 		//to-do - get all information on representatives/senators from models js, put in object for rendering
 		res.render('state');
 	}
