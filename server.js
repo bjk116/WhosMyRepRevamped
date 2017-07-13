@@ -8,7 +8,7 @@ var port = process.env.PORT || 3000;
 var app = express();
 
 //Allow handlebars to access public folder, set up body parser middleware
-app.use(express.static('public'));
+app.use(express.static('./public'));
 
 app.use(bodyParser.urlencoded({extendeD:false}));
 

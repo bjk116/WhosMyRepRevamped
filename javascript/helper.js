@@ -19,7 +19,7 @@ var shortState = ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'H
 
 function inArray(value, array) {
 	for(var i = 0; i < array.length; i++) {
-		if(value.toLowerCase() === array[i].toLowerCase()){ 
+		if(value.toLowerCase() === array[i].toLowerCase()){
 			return i;
 		}
 	}
