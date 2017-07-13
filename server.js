@@ -10,7 +10,7 @@ var app = express();
 //Allow handlebars to access public folder, set up body parser middleware
 app.use(express.static('./public'));
 
-app.use(bodyParser.urlencoded({extendeD:false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 //Override with POSt having ?_method=DELETE
 //Do we need this currently?  Maybe in future with comments etc

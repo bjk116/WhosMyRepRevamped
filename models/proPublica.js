@@ -1,4 +1,4 @@
-var apiKeys = require('./apiKeys.js');
+var apiKeys = require('../javascript/apiKeys.js');
 var Congress = require( 'propublica-congress-node' );
 var client = new Congress(apiKeys.proPublica);
 
