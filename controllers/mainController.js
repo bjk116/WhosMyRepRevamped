@@ -17,6 +17,7 @@ router.get('/', function(req, res) {
 
 router.get('/state/:stateName?', function(req, res) {
 	var stateInitials = req.params.stateName.toLowerCase();
+	console.log(stateInitials);
 	var stateInitialIndex = helper.getStateInitials(stateInitials);
 
 	if(stateInitialIndex === -1) {
